@@ -1,0 +1,17 @@
+regions:
+  - region:
+      name: waipounamu
+      file: waipounamu,waipounamu2
+      sub_regions:
+          - name:  Ngāi Tahu
+            file: tahu
+            info_file: tahu_info
+            info_marker_coordinate: 172.024247,-42.513050,0.0
+          - name:  Ngāti Mutunga o Wharekauri (Chatham Islands)
+            file: mutunga
+            info_file: mutunga_info
+            info_marker_coordinate: -176.764920,-43.790399,0.0
+          - name:  Moriori
+            file: moriori
+            info_file: moriori_info
+            info_marker_coordinate: -176.388638,-43.864496,0.0
