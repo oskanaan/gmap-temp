@@ -15,3 +15,111 @@ regions:
             file: moriori
             info_file: moriori_info
             info_marker_coordinate: -176.388638,-43.864496,0.0
+  - region:
+      name: Te Tau Ihu
+      file: te_tau_ihu
+      sub_regions:
+          - name:  Ngāti Toa Rangatira
+            file: ngati_toa_rangatira
+            info_file: ngati_toa_rangatira_info
+            info_marker_coordinate: 173.415382,-41.327061,0.0
+          - name:  Te Atiawa o Te Waka-a-Māui
+            file: te_atiawa_o_te_waka_a_maui
+            info_file: te_atiawa_o_te_waka_a_maui_info
+            info_marker_coordinate: 172.879016,-41.564439,0.0
+          - name:  Ngāti Apa ki te Rā Tō
+            file: ngati_apa_ki_te_ra_to
+            info_file: ngati_apa_ki_te_ra_to_info
+            info_marker_coordinate: 172.450549,-41.432784,0.0
+  - region:
+      name: Te Kāhui Māngai
+      file: te_kahui_mangai
+      sub_regions:
+          - name:  Taranaki
+            file: taranaki
+            info_file: taranaki_info
+            info_marker_coordinate: 173.994129,-39.292162,0.0
+          - name:  Ngāti Mutunga
+            file: ngati_mutunga
+            info_file: ngati_mutunga_info
+            info_marker_coordinate: 174.411609,-39.030218,0.0
+          - name: Ngā Rauru Kītahi
+            file: nga_rauru_kitahi
+            info_file: nga_rauru_kitahi_info
+            info_marker_coordinate: 174.651836,-39.619547,0.0
+
+  - region:
+      name: Te Moana O Raukawa
+      file: te_moana_o_raukawa
+      sub_regions:
+          - name:  Te Atiawa ki Whakarongotai
+            file: te_atiawa_ki_whakarongotai
+            info_file: te_atiawa_ki_whakarongotai_info
+            info_marker_coordinate: 175.047511,-40.901636,0.0
+  - region:
+      name: Tākitimu
+      file: takitimu
+      sub_regions:
+          - name: Ahuriri Hapū
+            file: ahuriri_hapu
+            info_file: ahuriri_hapu_info
+            info_marker_coordinate: 176.703741,-39.371809,0.0
+
+  - region:
+      name: Te Tai Rāwhiti
+      file: te_tai_rawhiti
+      sub_regions:
+          - name:  Ngāti Porou
+            file: ngati_porou
+            info_file: ngati_porou_info
+            info_marker_coordinate: 178.085507,-38.259910,0.0
+  - region:
+      name: Mātaatua
+      file: mataatua
+      sub_regions:
+          - name:  Ngāitai (Bay Of Plenty)
+            file: ngaitai
+            info_file: ngaitai_info
+            info_marker_coordinate: 177.535801,-38.028879,0.0
+  - region:
+      name: Te Arawa Waka
+      file: te_arawa_waka
+      sub_regions:
+          - name:  Ngāti Tūwharetoa (Bay of Plenty)
+            file: ngati_tuwharetoa
+            info_file: ngati_tuwharetoa_info
+            info_marker_coordinate: 176.643162,-37.951294,0.0
+  - region:
+      name: Tainui
+      file: tainui
+      sub_regions:
+          - name:  Maniapoto
+            file: maniapoto
+            info_file: maniapoto_info
+            info_marker_coordinate: 174.881229,-38.288377,0.0
+
+  - region:
+      name: Tāmaki
+      file: tamaki
+      sub_regions:
+          - name:  Taranaki
+            file: te_kawerau_maki
+            info_file: te_kawerau_maki_info
+            info_marker_coordinate: 174.601078,-36.598499,0.0
+
+  - region:
+      name: Te Tai Tokerau
+      file: te_tai_tokerau
+      sub_regions:
+          - name:  Taranaki
+            file: ngai_takoto
+            info_file: ngai_takoto_info
+            info_marker_coordinate: 172.983335,-34.622568,0.0
+          - name:  Ngāti Kurī
+            file: ngati_kuri
+            info_file: ngati_kuri_info
+            info_marker_coordinate: 172.875693,-34.552211,0.0
+          - name:  Ngāpuhi / Ngāti Kahu ki Whaingaroa
+            file: ngapuhi
+            info_file: ngapuhi_info
+            info_marker_coordinate: 173.638032,-34.991159,0.0

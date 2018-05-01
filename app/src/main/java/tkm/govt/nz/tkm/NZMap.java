@@ -111,7 +111,7 @@ public class NZMap extends FragmentActivity implements OnMapReadyCallback {
 
                     for(SubRegion subRegion : region.getRegion().getSubRegions()) {
                         for(PolylineOptions subRegionOptions : TKMUtils.getPolylineFromCoordinatesFile(getApplicationContext(), subRegion.getFile())) {
-                            subRegionOptions.color(Color.GREEN);
+                            subRegionOptions.color((int) (Color.GREEN * Math.random()));
                             Polyline subRegionPolyline = mMap.addPolyline(subRegionOptions);
                             subRegions.add(subRegionPolyline);
                         }
