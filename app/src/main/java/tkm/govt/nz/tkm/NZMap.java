@@ -103,7 +103,23 @@ public class NZMap extends FragmentActivity implements OnMapReadyCallback {
 
         try {
             Regions regions = TKMUtils.getTKMConfig(getApplicationContext());
+            int colorIndex = 0;
+            int[] colors = {Color.BLACK,
+                          Color.GRAY,
+                          Color.LTGRAY,
+                          Color.WHITE,
+                          Color.RED,
+                          Color.GREEN,
+                          Color.BLUE,
+                          Color.YELLOW,
+                          Color.CYAN,
+                          Color.MAGENTA,
+                    (int) (Color.MAGENTA*Math.random()),
+                    (int) (Color.CYAN*Math.random()),
+                    (int) (Color.GREEN*Math.random())};
+
             for(Region region : regions.getRegions()) {
+                int regionColor = colors[colorIndex];
                 for(PolylineOptions options : TKMUtils.getPolylineFromCoordinatesFile(getApplicationContext(), region.getRegion().getFile())) {
                     Polyline polyline = mMap.addPolyline(options);
                     polyline.setClickable(true);
@@ -111,13 +127,18 @@ public class NZMap extends FragmentActivity implements OnMapReadyCallback {
 
                     for(SubRegion subRegion : region.getRegion().getSubRegions()) {
                         for(PolylineOptions subRegionOptions : TKMUtils.getPolylineFromCoordinatesFile(getApplicationContext(), subRegion.getFile())) {
-                            subRegionOptions.color((int) (Color.GREEN * Math.random()));
+                            subRegionOptions.color((int) (regionColor));
+                            subRegionOptions.width(5);
                             Polyline subRegionPolyline = mMap.addPolyline(subRegionOptions);
                             subRegions.add(subRegionPolyline);
                         }
                         TKMUtils.putMarkerForRegion(mMap, subRegion);
                     }
                 }
+
+                colorIndex++;
+                colorIndex = colorIndex%colors.length;
+                System.out.print("colorIndex ############## "+ colorIndex);
             }
 
         } catch (IOException e) {

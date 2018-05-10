@@ -64,6 +64,7 @@ public class TKMUtils {
             }
             regionPolyline.add(firstPoint);
             regionPolylines.add(regionPolyline);
+            regionPolyline.width(3);
         }
 
         return regionPolylines;
