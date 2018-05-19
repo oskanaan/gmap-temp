@@ -1,6 +1,7 @@
 package tkm.govt.nz.tkm.util;
 
 import android.content.Context;
+import android.graphics.Color;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -60,6 +61,7 @@ public class TKMUtils {
                         firstPoint = coordinate;
                     }
                     regionPolyline.add(new LatLng(Float.parseFloat(lntLng[1]), Float.parseFloat(lntLng[0])));
+                    regionPolyline.color(Color.argb(85, 0 , 0 , 0));
                 }
             }
             regionPolyline.add(firstPoint);

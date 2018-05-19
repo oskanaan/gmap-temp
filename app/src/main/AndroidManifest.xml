@@ -31,12 +31,22 @@
         <activity
             android:name=".NZMap"
             android:label="@string/title_activity_nzmap">
+        </activity>
+        <activity
+            android:name=".MLA"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".WebPageView"
+            android:label="@string/title_activity_web_page_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
