@@ -24,6 +24,15 @@ public class MLA extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.contact).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent searchIntent = new Intent(MLA.this, WebPageView.class);
+                searchIntent.putExtra("URL", "http://www.tkm.govt.nz/contact/");
+                startActivity(searchIntent);
+            }
+        });
+
         findViewById(R.id.nzmap).setAnimation(getMapAlphaAnimation());
         findViewById(R.id.nzmap).setOnClickListener(new View.OnClickListener() {
             @Override
